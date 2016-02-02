@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oTP-rZ-SmM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="EBb-rj-LHa">
+            <objects>
+                <viewController id="PsC-m3-Jwb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f1g-Ew-P9P"/>
+                        <viewControllerLayoutGuide type="bottom" id="t63-Mh-d34"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lIo-ia-GiX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="0so-RY-qY5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9S-aG-MlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="579"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="1kQ-iY-byj">
+            <objects>
+                <viewController id="wUf-FQ-HjW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YtU-et-S9M"/>
+                        <viewControllerLayoutGuide type="bottom" id="dyX-yW-M3K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hZp-8E-Sw4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="MXa-Qb-hQW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P94-Y5-RFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="-82"/>
+        </scene>
+        <!--Main Tab Bar-->
+        <scene sceneID="Qeu-yS-pqw">
+            <objects>
+                <tabBarController id="oTP-rZ-SmM" customClass="MainTabBar" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="RWR-Vt-tq5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wUf-FQ-HjW" kind="relationship" relationship="viewControllers" id="qNk-iv-djv"/>
+                        <segue destination="PsC-m3-Jwb" kind="relationship" relationship="viewControllers" id="Je5-L0-TkQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8N-AN-9e0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="249"/>
+        </scene>
+    </scenes>
+</document>
