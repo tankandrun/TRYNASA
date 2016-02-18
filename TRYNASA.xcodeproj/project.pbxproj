@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90001481C61AABA00321885 /* APODPandectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A90001471C61AABA00321885 /* APODPandectCell.m */; };
 		A9B322431C60776900B1F176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322421C60776900B1F176 /* main.m */; };
 		A9B322461C60776900B1F176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322451C60776900B1F176 /* AppDelegate.m */; };
-		A9B3224C1C60776900B1F176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B3224A1C60776900B1F176 /* Main.storyboard */; };
 		A9B3224E1C60776900B1F176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B3224D1C60776900B1F176 /* Assets.xcassets */; };
 		A9B322511C60776900B1F176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B3224F1C60776900B1F176 /* LaunchScreen.storyboard */; };
 		A9B3225C1C60776900B1F176 /* TRYNASATests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3225B1C60776900B1F176 /* TRYNASATests.m */; };
 		A9B322671C60776900B1F176 /* TRYNASAUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322661C60776900B1F176 /* TRYNASAUITests.m */; };
-		A9B322761C60789D00B1F176 /* MainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322751C60789D00B1F176 /* MainTabBar.m */; };
+		A9B3227F1C6083C600B1F176 /* APODCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3227E1C6083C600B1F176 /* APODCollectionViewController.m */; };
+		A9B322821C6083D500B1F176 /* CollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322811C6083D500B1F176 /* CollectionViewFlowLayout.m */; };
+		A9B3228B1C60897900B1F176 /* NavTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322881C60897900B1F176 /* NavTableViewCell.m */; };
+		A9B3228C1C60897900B1F176 /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B3228A1C60897900B1F176 /* NavViewController.m */; };
+		A9B322991C60A4DA00B1F176 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322981C60A4DA00B1F176 /* HeaderView.m */; };
+		AA0758B04D3E30A270ECBF0D /* libPods-TRYNASA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F997CD0A6A5D62744FF1EA /* libPods-TRYNASA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +40,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06F997CD0A6A5D62744FF1EA /* libPods-TRYNASA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRYNASA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90001461C61AABA00321885 /* APODPandectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODPandectCell.h; sourceTree = "<group>"; };
+		A90001471C61AABA00321885 /* APODPandectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODPandectCell.m; sourceTree = "<group>"; };
 		A9B3223E1C60776900B1F176 /* TRYNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRYNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B322421C60776900B1F176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9B322441C60776900B1F176 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A9B322451C60776900B1F176 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A9B3224B1C60776900B1F176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9B3224D1C60776900B1F176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9B322501C60776900B1F176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9B322521C60776900B1F176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9B322571C60776900B1F176 /* TRYNASATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRYNASATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B322571C60776900B1F176 /* TRYNASA.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRYNASA.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B3225B1C60776900B1F176 /* TRYNASATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRYNASATests.m; sourceTree = "<group>"; };
 		A9B3225D1C60776900B1F176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9B322621C60776900B1F176 /* TRYNASAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRYNASAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B322621C60776900B1F176 /* TRYNASA.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRYNASA.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B322661C60776900B1F176 /* TRYNASAUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRYNASAUITests.m; sourceTree = "<group>"; };
 		A9B322681C60776900B1F176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9B322741C60789D00B1F176 /* MainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBar.h; sourceTree = "<group>"; };
-		A9B322751C60789D00B1F176 /* MainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBar.m; sourceTree = "<group>"; };
+		A9B322771C6079C300B1F176 /* pchFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pchFile.pch; sourceTree = "<group>"; };
+		A9B3227D1C6083C600B1F176 /* APODCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODCollectionViewController.h; sourceTree = "<group>"; };
+		A9B3227E1C6083C600B1F176 /* APODCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODCollectionViewController.m; sourceTree = "<group>"; };
+		A9B322801C6083D500B1F176 /* CollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		A9B322811C6083D500B1F176 /* CollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		A9B322851C60861B00B1F176 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A9B322871C60897900B1F176 /* NavTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavTableViewCell.h; sourceTree = "<group>"; };
+		A9B322881C60897900B1F176 /* NavTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavTableViewCell.m; sourceTree = "<group>"; };
+		A9B322891C60897900B1F176 /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
+		A9B3228A1C60897900B1F176 /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
+		A9B322971C60A4DA00B1F176 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
+		A9B322981C60A4DA00B1F176 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
+		CB04A49EFCF716C65CC6CCD7 /* Pods-TRYNASA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRYNASA.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRYNASA/Pods-TRYNASA.release.xcconfig"; sourceTree = "<group>"; };
+		CB5CE2C1F2771AEAAF4020B3 /* Pods-TRYNASA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRYNASA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRYNASA/Pods-TRYNASA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0758B04D3E30A270ECBF0D /* libPods-TRYNASA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F100200A1D7B44FAE67E9BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB5CE2C1F2771AEAAF4020B3 /* Pods-TRYNASA.debug.xcconfig */,
+				CB04A49EFCF716C65CC6CCD7 /* Pods-TRYNASA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9008AAA3A818999E532038DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06F997CD0A6A5D62744FF1EA /* libPods-TRYNASA.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9B322351C60776900B1F176 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +122,8 @@
 				A9B3225A1C60776900B1F176 /* TRYNASATests */,
 				A9B322651C60776900B1F176 /* TRYNASAUITests */,
 				A9B3223F1C60776900B1F176 /* Products */,
+				2F100200A1D7B44FAE67E9BA /* Pods */,
+				9008AAA3A818999E532038DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				A9B3223E1C60776900B1F176 /* TRYNASA.app */,
-				A9B322571C60776900B1F176 /* TRYNASATests.xctest */,
-				A9B322621C60776900B1F176 /* TRYNASAUITests.xctest */,
+				A9B322571C60776900B1F176 /* TRYNASA.xctest */,
+				A9B322621C60776900B1F176 /* TRYNASA.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,9 +142,9 @@
 			children = (
 				A9B322441C60776900B1F176 /* AppDelegate.h */,
 				A9B322451C60776900B1F176 /* AppDelegate.m */,
-				A9B322741C60789D00B1F176 /* MainTabBar.h */,
-				A9B322751C60789D00B1F176 /* MainTabBar.m */,
-				A9B3224A1C60776900B1F176 /* Main.storyboard */,
+				A9B322861C60894600B1F176 /* NavViewController */,
+				A9B322781C607AAE00B1F176 /* Config */,
+				A9B322791C607AC000B1F176 /* APOD */,
 				A9B3224D1C60776900B1F176 /* Assets.xcassets */,
 				A9B3224F1C60776900B1F176 /* LaunchScreen.storyboard */,
 				A9B322521C60776900B1F176 /* Info.plist */,
@@ -140,6 +179,73 @@
 			path = TRYNASAUITests;
 			sourceTree = "<group>";
 		};
+		A9B322781C607AAE00B1F176 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A9B322771C6079C300B1F176 /* pchFile.pch */,
+				A9B322851C60861B00B1F176 /* Constants.h */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		A9B322791C607AC000B1F176 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				A9B322951C60A4B100B1F176 /* View */,
+				A9B322941C60A4A900B1F176 /* Model */,
+				A9B322931C60A47C00B1F176 /* ViewController */,
+			);
+			name = APOD;
+			sourceTree = "<group>";
+		};
+		A9B322861C60894600B1F176 /* NavViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A9B322871C60897900B1F176 /* NavTableViewCell.h */,
+				A9B322881C60897900B1F176 /* NavTableViewCell.m */,
+				A9B322891C60897900B1F176 /* NavViewController.h */,
+				A9B3228A1C60897900B1F176 /* NavViewController.m */,
+				A9B322961C60A4C000B1F176 /* View */,
+			);
+			name = NavViewController;
+			sourceTree = "<group>";
+		};
+		A9B322931C60A47C00B1F176 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3227D1C6083C600B1F176 /* APODCollectionViewController.h */,
+				A9B3227E1C6083C600B1F176 /* APODCollectionViewController.m */,
+				A9B322801C6083D500B1F176 /* CollectionViewFlowLayout.h */,
+				A9B322811C6083D500B1F176 /* CollectionViewFlowLayout.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A9B322941C60A4A900B1F176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A9B322951C60A4B100B1F176 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A90001461C61AABA00321885 /* APODPandectCell.h */,
+				A90001471C61AABA00321885 /* APODPandectCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A9B322961C60A4C000B1F176 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9B322971C60A4DA00B1F176 /* HeaderView.h */,
+				A9B322981C60A4DA00B1F176 /* HeaderView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B3226B1C60776900B1F176 /* Build configuration list for PBXNativeTarget "TRYNASA" */;
 			buildPhases = (
+				41EA7AE6ADCF32415610010F /* Check Pods Manifest.lock */,
 				A9B3223A1C60776900B1F176 /* Sources */,
 				A9B3223B1C60776900B1F176 /* Frameworks */,
 				A9B3223C1C60776900B1F176 /* Resources */,
+				CB02390D1B6240A53261B27B /* Embed Pods Frameworks */,
+				CC4D24E002C4A105F9EEA05E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,7 +284,7 @@
 			);
 			name = TRYNASATests;
 			productName = TRYNASATests;
-			productReference = A9B322571C60776900B1F176 /* TRYNASATests.xctest */;
+			productReference = A9B322571C60776900B1F176 /* TRYNASA.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A9B322611C60776900B1F176 /* TRYNASAUITests */ = {
@@ -193,7 +302,7 @@
 			);
 			name = TRYNASAUITests;
 			productName = TRYNASAUITests;
-			productReference = A9B322621C60776900B1F176 /* TRYNASAUITests.xctest */;
+			productReference = A9B322621C60776900B1F176 /* TRYNASA.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +357,6 @@
 			files = (
 				A9B322511C60776900B1F176 /* LaunchScreen.storyboard in Resources */,
 				A9B3224E1C60776900B1F176 /* Assets.xcassets in Resources */,
-				A9B3224C1C60776900B1F176 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,14 +376,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41EA7AE6ADCF32415610010F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB02390D1B6240A53261B27B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRYNASA/Pods-TRYNASA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC4D24E002C4A105F9EEA05E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRYNASA/Pods-TRYNASA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9B3223A1C60776900B1F176 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B322991C60A4DA00B1F176 /* HeaderView.m in Sources */,
+				A9B3227F1C6083C600B1F176 /* APODCollectionViewController.m in Sources */,
 				A9B322461C60776900B1F176 /* AppDelegate.m in Sources */,
+				A9B322821C6083D500B1F176 /* CollectionViewFlowLayout.m in Sources */,
 				A9B322431C60776900B1F176 /* main.m in Sources */,
-				A9B322761C60789D00B1F176 /* MainTabBar.m in Sources */,
+				A9B3228C1C60897900B1F176 /* NavViewController.m in Sources */,
+				A9B3228B1C60897900B1F176 /* NavTableViewCell.m in Sources */,
+				A90001481C61AABA00321885 /* APODPandectCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,14 +472,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A9B3224A1C60776900B1F176 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9B3224B1C60776900B1F176 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A9B3224F1C60776900B1F176 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,23 +565,27 @@
 		};
 		A9B3226C1C60776900B1F176 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5CE2C1F2771AEAAF4020B3 /* Pods-TRYNASA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/BILL/Desktop/TRYNASA/TRYNASA/pchFile.pch;
 				INFOPLIST_FILE = TRYNASA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mine.TRYNASA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRYNASA;
 			};
 			name = Debug;
 		};
 		A9B3226D1C60776900B1F176 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB04A49EFCF716C65CC6CCD7 /* Pods-TRYNASA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/BILL/Desktop/TRYNASA/TRYNASA/pchFile.pch;
 				INFOPLIST_FILE = TRYNASA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mine.TRYNASA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRYNASA;
 			};
 			name = Release;
 		};
@@ -439,7 +596,7 @@
 				INFOPLIST_FILE = TRYNASATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mine.TRYNASATests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRYNASA;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRYNASA.app/TRYNASA";
 			};
 			name = Debug;
@@ -451,7 +608,7 @@
 				INFOPLIST_FILE = TRYNASATests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mine.TRYNASATests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRYNASA;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRYNASA.app/TRYNASA";
 			};
 			name = Release;
@@ -462,7 +619,7 @@
 				INFOPLIST_FILE = TRYNASAUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mine.TRYNASAUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRYNASA;
 				TEST_TARGET_NAME = TRYNASA;
 				USES_XCTRUNNER = YES;
 			};
@@ -474,7 +631,7 @@
 				INFOPLIST_FILE = TRYNASAUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mine.TRYNASAUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRYNASA;
 				TEST_TARGET_NAME = TRYNASA;
 				USES_XCTRUNNER = YES;
 			};
@@ -499,6 +656,7 @@
 				A9B3226D1C60776900B1F176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9B3226E1C60776900B1F176 /* Build configuration list for PBXNativeTarget "TRYNASATests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +665,7 @@
 				A9B322701C60776900B1F176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9B322711C60776900B1F176 /* Build configuration list for PBXNativeTarget "TRYNASAUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +674,7 @@
 				A9B322731C60776900B1F176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

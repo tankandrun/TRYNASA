@@ -1,0 +1,33 @@
+//
+//  pchFile.pch
+//  TRYNASA
+//
+//  Created by 金顺度 on 16/2/2.
+//  Copyright © 2016年 金顺度. All rights reserved.
+//
+
+#ifndef pchFile_pch
+#define pchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+//添加框架
+#import <AFNetworking.h>
+#import <UIKit+AFNetworking.h>
+
+#import <Masonry.h>
+#import <MJExtension.h>
+#import <MJRefresh.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#import <SVProgressHUD.h>
+
+//添加自定义文件
+#import "Constants.h"
+
+
+
+#endif /* pchFile_pch */

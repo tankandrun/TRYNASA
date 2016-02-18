@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-               BuildableName = "TRYNASA.app"
+               BuildableName = "TRY.app"
                BlueprintName = "TRYNASA"
                ReferencedContainer = "container:TRYNASA.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9B322561C60776900B1F176"
-               BuildableName = "TRYNASATests.xctest"
+               BuildableName = "TRYNASA.xctest"
                BlueprintName = "TRYNASATests"
                ReferencedContainer = "container:TRYNASA.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9B322611C60776900B1F176"
-               BuildableName = "TRYNASAUITests.xctest"
+               BuildableName = "TRYNASA.xctest"
                BlueprintName = "TRYNASAUITests"
                ReferencedContainer = "container:TRYNASA.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-            BuildableName = "TRYNASA.app"
+            BuildableName = "TRY.app"
             BlueprintName = "TRYNASA"
             ReferencedContainer = "container:TRYNASA.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-            BuildableName = "TRYNASA.app"
+            BuildableName = "TRY.app"
             BlueprintName = "TRYNASA"
             ReferencedContainer = "container:TRYNASA.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-            BuildableName = "TRYNASA.app"
+            BuildableName = "TRY.app"
             BlueprintName = "TRYNASA"
             ReferencedContainer = "container:TRYNASA.xcodeproj">
          </BuildableReference>

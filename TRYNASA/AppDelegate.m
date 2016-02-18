@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NavViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    NavViewController *vc = [[NavViewController alloc]init];
+    vc.rowHeight = 60;
+    vc.navViewWidth = 220;
+    
+    self.window.rootViewController = vc;
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
 }
