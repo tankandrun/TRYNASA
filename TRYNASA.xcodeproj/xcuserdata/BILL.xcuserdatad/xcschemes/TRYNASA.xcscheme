@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-               BuildableName = "TRY.app"
+               BuildableName = "TRYNASA.app"
                BlueprintName = "TRYNASA"
                ReferencedContainer = "container:TRYNASA.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-            BuildableName = "TRY.app"
+            BuildableName = "TRYNASA.app"
             BlueprintName = "TRYNASA"
             ReferencedContainer = "container:TRYNASA.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-            BuildableName = "TRY.app"
+            BuildableName = "TRYNASA.app"
             BlueprintName = "TRYNASA"
             ReferencedContainer = "container:TRYNASA.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A9B3223D1C60776900B1F176"
-            BuildableName = "TRY.app"
+            BuildableName = "TRYNASA.app"
             BlueprintName = "TRYNASA"
             ReferencedContainer = "container:TRYNASA.xcodeproj">
          </BuildableReference>

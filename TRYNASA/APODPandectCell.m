@@ -10,9 +10,28 @@
 
 @implementation APODPandectCell
 
-//+ (instancetype)cellWithCollectionView:(UICollectionView *)collectionView {
-//    
-//}
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.bgImageView = [[CustonImageView alloc]init];
+        [self addSubview:self.bgImageView];
+        [self.bgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.top.bottom.mas_equalTo(0);
+        }];
+        self.bgImageView.contentMode = UIViewContentModeScaleToFill;
+        
+        self.label = [[UILabel alloc]init];
+        [self addSubview:self.label];
+        [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(10);
+            make.right.bottom.mas_equalTo(-10);
+            make.height.mas_equalTo(30);
+        }];
+        self.label.textColor = [UIColor whiteColor];
+        self.label.textAlignment = NSTextAlignmentRight;
+        
+    }
+    return self;
+}
 
 
 @end

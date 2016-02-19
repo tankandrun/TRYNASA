@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A90001481C61AABA00321885 /* APODPandectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A90001471C61AABA00321885 /* APODPandectCell.m */; };
+		A99A31B21C7596C000B49A88 /* APODModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A99A31B11C7596C000B49A88 /* APODModel.m */; };
+		A99A31B61C7598FE00B49A88 /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = A99A31B51C7598FE00B49A88 /* BaseNetworking.m */; };
+		A99A31BA1C75B1DC00B49A88 /* CustonImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A99A31B91C75B1DC00B49A88 /* CustonImageView.m */; };
 		A9B322431C60776900B1F176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322421C60776900B1F176 /* main.m */; };
 		A9B322461C60776900B1F176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B322451C60776900B1F176 /* AppDelegate.m */; };
 		A9B3224E1C60776900B1F176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B3224D1C60776900B1F176 /* Assets.xcassets */; };
@@ -43,6 +46,12 @@
 		06F997CD0A6A5D62744FF1EA /* libPods-TRYNASA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRYNASA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90001461C61AABA00321885 /* APODPandectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODPandectCell.h; sourceTree = "<group>"; };
 		A90001471C61AABA00321885 /* APODPandectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODPandectCell.m; sourceTree = "<group>"; };
+		A99A31B01C7596C000B49A88 /* APODModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APODModel.h; sourceTree = "<group>"; };
+		A99A31B11C7596C000B49A88 /* APODModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APODModel.m; sourceTree = "<group>"; };
+		A99A31B41C7598FE00B49A88 /* BaseNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetworking.h; sourceTree = "<group>"; };
+		A99A31B51C7598FE00B49A88 /* BaseNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetworking.m; sourceTree = "<group>"; };
+		A99A31B81C75B1DC00B49A88 /* CustonImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustonImageView.h; sourceTree = "<group>"; };
+		A99A31B91C75B1DC00B49A88 /* CustonImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustonImageView.m; sourceTree = "<group>"; };
 		A9B3223E1C60776900B1F176 /* TRYNASA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRYNASA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B322421C60776900B1F176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9B322441C60776900B1F176 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +124,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A99A31AE1C75967E00B49A88 /* APODVC */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3227D1C6083C600B1F176 /* APODCollectionViewController.h */,
+				A9B3227E1C6083C600B1F176 /* APODCollectionViewController.m */,
+				A9B322801C6083D500B1F176 /* CollectionViewFlowLayout.h */,
+				A9B322811C6083D500B1F176 /* CollectionViewFlowLayout.m */,
+			);
+			name = APODVC;
+			sourceTree = "<group>";
+		};
+		A99A31AF1C75969000B49A88 /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				A99A31B01C7596C000B49A88 /* APODModel.h */,
+				A99A31B11C7596C000B49A88 /* APODModel.m */,
+			);
+			name = APOD;
+			sourceTree = "<group>";
+		};
+		A99A31B31C75984D00B49A88 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A99A31B41C7598FE00B49A88 /* BaseNetworking.h */,
+				A99A31B51C7598FE00B49A88 /* BaseNetworking.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A99A31B71C75B1B100B49A88 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A99A31B81C75B1DC00B49A88 /* CustonImageView.h */,
+				A99A31B91C75B1DC00B49A88 /* CustonImageView.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		A9B322351C60776900B1F176 = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +191,11 @@
 				A9B322451C60776900B1F176 /* AppDelegate.m */,
 				A9B322861C60894600B1F176 /* NavViewController */,
 				A9B322781C607AAE00B1F176 /* Config */,
-				A9B322791C607AC000B1F176 /* APOD */,
+				A99A31B71C75B1B100B49A88 /* Tool */,
+				A99A31B31C75984D00B49A88 /* Networking */,
+				A9B322951C60A4B100B1F176 /* View */,
+				A9B322941C60A4A900B1F176 /* Model */,
+				A9B322931C60A47C00B1F176 /* ViewController */,
 				A9B3224D1C60776900B1F176 /* Assets.xcassets */,
 				A9B3224F1C60776900B1F176 /* LaunchScreen.storyboard */,
 				A9B322521C60776900B1F176 /* Info.plist */,
@@ -188,16 +239,6 @@
 			name = Config;
 			sourceTree = "<group>";
 		};
-		A9B322791C607AC000B1F176 /* APOD */ = {
-			isa = PBXGroup;
-			children = (
-				A9B322951C60A4B100B1F176 /* View */,
-				A9B322941C60A4A900B1F176 /* Model */,
-				A9B322931C60A47C00B1F176 /* ViewController */,
-			);
-			name = APOD;
-			sourceTree = "<group>";
-		};
 		A9B322861C60894600B1F176 /* NavViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,10 +254,7 @@
 		A9B322931C60A47C00B1F176 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A9B3227D1C6083C600B1F176 /* APODCollectionViewController.h */,
-				A9B3227E1C6083C600B1F176 /* APODCollectionViewController.m */,
-				A9B322801C6083D500B1F176 /* CollectionViewFlowLayout.h */,
-				A9B322811C6083D500B1F176 /* CollectionViewFlowLayout.m */,
+				A99A31AE1C75967E00B49A88 /* APODVC */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -224,6 +262,7 @@
 		A9B322941C60A4A900B1F176 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A99A31AF1C75969000B49A88 /* APOD */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -429,7 +468,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99A31B61C7598FE00B49A88 /* BaseNetworking.m in Sources */,
 				A9B322991C60A4DA00B1F176 /* HeaderView.m in Sources */,
+				A99A31B21C7596C000B49A88 /* APODModel.m in Sources */,
 				A9B3227F1C6083C600B1F176 /* APODCollectionViewController.m in Sources */,
 				A9B322461C60776900B1F176 /* AppDelegate.m in Sources */,
 				A9B322821C6083D500B1F176 /* CollectionViewFlowLayout.m in Sources */,
@@ -437,6 +478,7 @@
 				A9B3228C1C60897900B1F176 /* NavViewController.m in Sources */,
 				A9B3228B1C60897900B1F176 /* NavTableViewCell.m in Sources */,
 				A90001481C61AABA00321885 /* APODPandectCell.m in Sources */,
+				A99A31BA1C75B1DC00B49A88 /* CustonImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

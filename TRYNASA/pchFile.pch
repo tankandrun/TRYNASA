@@ -27,6 +27,8 @@
 
 //添加自定义文件
 #import "Constants.h"
+#import "BaseNetworking.h"
+#import "CustonImageView.h"
 
 
 

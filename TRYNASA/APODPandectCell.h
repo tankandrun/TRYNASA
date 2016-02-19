@@ -10,6 +10,7 @@
 
 @interface APODPandectCell : UICollectionViewCell
 
-//+ (instancetype)cellWithCollectionView:(UICollectionView *)collectionView;
+@property(nonatomic,strong)CustonImageView *bgImageView;
+@property(nonatomic,strong)UILabel *label;
 
 @end

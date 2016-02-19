@@ -8,17 +8,29 @@
 
 #import "APODCollectionViewController.h"
 #import "CollectionViewFlowLayout.h"
+#import "APODPandectCell.h"
+#import "APODModel.h"
+#import <MJExtension.h>
 
 @interface APODCollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic,strong) CollectionViewFlowLayout *flowLayout;
 @property (nonatomic,strong) UICollectionView *mainCollectionView;
 
+@property (nonatomic,strong) NSString *url;
+@property (nonatomic,strong) APODModel *apodModel;
 
+@property (nonatomic,strong) NSMutableArray *modelArray;
 
 @end
 
 @implementation APODCollectionViewController
+- (NSArray *)modelArray {
+    if (!_modelArray) {
+        _modelArray = [NSMutableArray array];
+    }
+    return _modelArray;
+}
 - (CollectionViewFlowLayout *)flowLayout {
     if (!_flowLayout) {
         _flowLayout = [[CollectionViewFlowLayout alloc]init];
@@ -37,6 +49,12 @@
     }
     return _mainCollectionView;
 }
+- (NSString *)getDateFromNowDays:(int)days {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *date = [formatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:-3600*24*days]];
+    return date;
+}
 #pragma mark - 页面加载相关
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -53,17 +71,61 @@
     self.flowLayout.springDamping = 1;
     self.flowLayout.springFrequency = 1;
     self.mainCollectionView.hidden = NO;
-    [self.mainCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    [self.mainCollectionView registerClass:[APODPandectCell class] forCellWithReuseIdentifier:@"cell"];
+    
+    [BaseNetworking GET:@"https://api.nasa.gov/planetary/apod?api_key=up28YO9Q5UdjH4ErFlM2CLX1QMc8P0CVs22fmR5B" parameters:nil success:^(id successResponse) {
+        NSLog(@"%@",successResponse);
+        self.apodModel = [[APODModel alloc]initWithDict:successResponse];
+        [self.modelArray addObject:self.apodModel];
+        
+        for (int i = 0; i<20; i++) {
+            [BaseNetworking GET:@"https://api.nasa.gov/planetary/apod?api_key=up28YO9Q5UdjH4ErFlM2CLX1QMc8P0CVs22fmR5B" parameters:@{@"date":[self getDateFromNowDays:i+1]} success:^(id successResponse) {
+                NSLog(@"%@",successResponse);
+                self.apodModel = [[APODModel alloc]initWithDict:successResponse];
+                [self.modelArray addObject:self.apodModel];
+                if (i == 19) {
+                    [self.mainCollectionView reloadData];
+                }
+            } andFailure:^(id failureResponse) {
+                NSLog(@"%@",failureResponse);
+            }];
+        }
+        
+    } andFailure:^(id failureResponse) {
+        
+    }];
+    
+    
+    
+    
+    
 }
+
+
+
+
 #pragma mark - UICollectionViewDelegate,UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 50;
+    return 20;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    cell.contentView.backgroundColor = [UIColor lightGrayColor];
+    APODPandectCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
+    if (self.modelArray.count != 0) {
+        APODModel *model = self.modelArray[indexPath.row];
+        [cell.bgImageView.imageView sd_setImageWithURL:[NSURL URLWithString:model.url]];
+        cell.label.text = model.title;
+    }
+    cell.contentView.backgroundColor = [UIColor grayColor];
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
